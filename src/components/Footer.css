@@ -1,0 +1,13 @@
+.footer {
+	padding: 15px;
+	background-color: blue;
+}
+.icon {
+	list-style: none;
+	display: inline;
+	margin: 10px;
+}
+
+.icon-list {
+	padding-left: 0px;
+}

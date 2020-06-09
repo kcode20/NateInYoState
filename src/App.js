@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 
@@ -17,20 +18,21 @@ const App = () => {
 					<Route path='/about'>
 						<About />
 					</Route>
-					<Route path='/users'>
-						<Users />
+					<Route path='/map'>
+						<Map />
 					</Route>
 					<Route path='/'>
 						<Home />
 					</Route>
 				</Switch>
 			</div>
+			<Footer />
 		</Router>
 	);
 };
 
-function Users() {
-	return <h2>Users</h2>;
+function Map() {
+	return <h2>Map</h2>;
 }
 
 export default App;
