@@ -1,6 +1,17 @@
 .footer {
 	padding: 15px;
-	background-color: blue;
+	background-color: #282c34;
+	color: white;
+}
+
+.title {
+	font-family: 'harlow_solidregular';
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: black;
+	font-size: 50px;
+	font-weight: normal;
+	font-style: normal;
 }
 .icon {
 	list-style: none;

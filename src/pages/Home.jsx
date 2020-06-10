@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../logo.svg';
+import { Row, Col } from 'react-bootstrap';
 import nate from '../images/nate.png';
 import './Home.css';
 
@@ -7,7 +7,14 @@ const Home = () => {
 	return (
 		<div className='App'>
 			<div className='cover'>
-				<img src={nate} className='App-logo' alt='logo' />
+				<Row>
+					<Col>
+						<h1>Nate In Yo' State</h1>
+					</Col>
+					<Col>
+						<img src={nate} className='App-logo' alt='logo' />
+					</Col>
+				</Row>
 			</div>
 			<header className='App-header'>
 				<p>
