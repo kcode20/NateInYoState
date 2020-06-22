@@ -15,8 +15,8 @@ const Footer = () => {
 					<Col md='6'>
 						<h5 className='title'>Nate In Yo' State</h5>
 						<p>
-							Here you can use rows and columns here to organize your footer
-							content.
+							Nateinyostate is a food, travel, and lifestyle channel where I
+							share my experiences and adventures.
 						</p>
 					</Col>
 					<Col md='6'>

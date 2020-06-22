@@ -1,5 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+
+import About from './About.jsx';
 import nate from '../images/nate.png';
 import './Home.css';
 
@@ -8,18 +10,21 @@ const Home = () => {
 		<div className='App'>
 			<div className='cover'>
 				<Row>
-					<Col>
-						<h1>Nate In Yo' State</h1>
+					<Col sm={8}>
+						<div className='vertical-center'>
+							<h1>Nate In Yo' State</h1>
+							<p className='header-text'>Food, Travel, and Lifestyle</p>
+						</div>
 					</Col>
-					<Col>
-						<img src={nate} className='App-logo' alt='logo' />
+					<Col xs lg='2'>
+						<div className='vertical-center'>
+							<img src={nate} className='App-logo' alt='logo' />
+						</div>
 					</Col>
 				</Row>
 			</div>
 			<header className='App-header'>
-				<p>
-					Finish adding <code>code</code> for the Home page.
-				</p>
+				<About />
 			</header>
 		</div>
 	);

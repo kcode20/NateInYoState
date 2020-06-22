@@ -1,8 +1,9 @@
 import React from 'react';
+import './About.css';
 
 const About = () => {
 	return (
-		<div>
+		<div className='about'>
 			<p>
 				Nateinyostate is a passion project that got started at a young age of
 				traveling and telling the world about it. It all started with a bike

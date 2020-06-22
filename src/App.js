@@ -5,6 +5,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
+import Map from './components/Map';
 
 const App = () => {
 	return (
@@ -19,7 +20,12 @@ const App = () => {
 						<About />
 					</Route>
 					<Route path='/map'>
-						<Map />
+						<Map
+							googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API}&v=3.exp&libraries=geometry,drawing,places`}
+							loadingElement={<div style={{ height: `100%` }} />}
+							containerElement={<div style={{ height: `100vh` }} />}
+							mapElement={<div style={{ height: `100%` }} />}
+						/>
 					</Route>
 					<Route path='/'>
 						<Home />
@@ -30,9 +36,5 @@ const App = () => {
 		</Router>
 	);
 };
-
-function Map() {
-	return <h2>Map</h2>;
-}
 
 export default App;
